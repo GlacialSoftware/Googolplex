@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText 
+        android:id="@+id/customJumpEntry"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:lines="4"
+        android:minLines="3"
+        android:maxLines="5"
+        android:textSize="18sp"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:inputType="number|textMultiLine"
+        android:maxLength="101"
+        android:imeOptions="actionGo"
+        android:hint="@string/custom_jump_hint"/>
+
+
+     <GridView
+        android:id="@+id/jumpGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:columnWidth="85dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="spacingWidth"
+        android:gravity="center"/>
+
+</LinearLayout>
